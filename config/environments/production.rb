@@ -18,7 +18,7 @@ Rails.application.configure do
   ActionMailer::Base.delivery_method = :smtp
   ActionMailer::Base.perform_deliveries = true
 
-
+end
 # На случай деплоя на Heroku
 #  ActionMailer::Base.smtp_settings = {
 #    :address              => 'smtp.sendgrid.net',
