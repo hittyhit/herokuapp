@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby '2.3.0'
 gem 'rails', '4.1.6'
 gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
@@ -15,7 +15,7 @@ gem 'letter_opener'
 gem 'guard'
 gem 'guard-rspec', '~> 4.2.8'
 gem 'puma'
-
+gem 'rails_12factor'
 
 
 gem 'pg'
