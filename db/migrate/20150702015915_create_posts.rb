@@ -4,7 +4,6 @@ class CreatePosts < ActiveRecord::Migration
       t.text :content, null: false
       t.references :user, index: true
       t.string :attachment
-
       t.timestamps
     end
   end
