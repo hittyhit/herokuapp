@@ -15,7 +15,7 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
   config.action_mailer.default_url_options = { host: 'http://peaceful-mesa-78231.herokuapp.com/' }
 
-  ActionMailer::Base.delivery_method = :file
+  ActionMailer::Base.delivery_method = :letter_opener
   ActionMailer::Base.perform_deliveries = true
 
 end
