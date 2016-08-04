@@ -20,9 +20,10 @@ gem 'rails_12factor'
 gem 'pg'
 gem 'unicorn'
 gem 'cloudinary'
+gem 'carrierwave'
 
 gem 'devise'
-gem 'carrierwave'
+
 
 gem 'will_paginate', '~> 3.0.6'
 gem 'public_activity'
