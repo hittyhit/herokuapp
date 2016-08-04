@@ -13,7 +13,7 @@ Rails.application.configure do
   config.active_support.deprecation = :notify
   config.log_formatter = ::Logger::Formatter.new
   config.active_record.dump_schema_after_migration = false
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  config.action_mailer.default_url_options = { :host => 'peaceful-mesa-78231.herokuapp.com' }
   config.action_mailer.delivery_method = :smtp
 end
 
