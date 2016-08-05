@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   resources :posts
-  resources :comments, only: [:create, :destroy]
+  resources :comments
   devise_for :users
   resources :users
 

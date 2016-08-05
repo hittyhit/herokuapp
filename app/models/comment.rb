@@ -7,9 +7,6 @@ class Comment < ActiveRecord::Base
 
   belongs_to :user
 
-  include PublicActivity::Model
-  tracked except: [:create, :update, :destroy], owner: proc { |_controller, model| model.user }
-
   validates_presence_of :comment
   validates_presence_of :commentable
   validates_presence_of :user
