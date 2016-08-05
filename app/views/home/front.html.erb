@@ -1,0 +1,32 @@
+<div class="row">
+  <div id="newsfeed" class="col-lg-6">
+    <h4><%= fa_icon "newspaper-o" %> NEWSFEED</h4>
+    <div id="activities">
+      <% if @activities.empty? %>
+        <div class="well">
+          <%= render('shared/no_resource', resources: 'Activities') %>
+        </div>
+      <% else %>
+        <%= render_activities(@activities, layout: '/shared/activity') %>
+      <% end %>
+    </div>
+    <%= render 'shared/paginate', resources: @activities %>
+  </div>
+
+  <div id="intro" class="col-lg-6">
+    <h1>Welcome to Litest!</h1>
+    <p>Only authorized users can acces the service</p>
+    <p>Please <b>Sign Up</b> or <b>Login</b> with your existing account</p>
+    <hr>
+
+    <a href="<%= new_user_registration_path %>" class="btn btn-warning">
+      <%= fa_icon 'shield' %> Sign Up
+    </a>
+
+    <a href="<%= user_session_path %>" class="btn btn-primary">
+      Login
+    </a>
+
+  </div>
+
+
